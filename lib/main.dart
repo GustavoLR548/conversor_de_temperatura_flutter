@@ -117,16 +117,17 @@ class _MyHomePageState extends State<MyHomePage> {
         body: Form(
           key: _formKey,
           child: SingleChildScrollView(
+
             child: Padding(
               padding: const EdgeInsets.all(15),
               child: Column(
                 children: [
-                  Text('Escolha a unidade de base'),
+                  const Text('Escolha a unidade de base'),
                   ...checkboxes,
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
-                  Text('Configure a precisão'),
+                  const Text('Configure a precisão'),
                   Slider(
                     value: precision.toDouble(),
                     onChanged: (value) {
@@ -139,7 +140,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     divisions: 10,
                     label: '$precision',
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   TextFormField(
@@ -165,7 +166,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     height: 20,
                   ),
                   ElevatedButton(
-                      child: Text('Calcular'),
+                      child: const Text('Calcular'),
                       onPressed: _submit,
                       style: ButtonStyle(
                           backgroundColor: MaterialStateProperty.all<Color>(
@@ -175,7 +176,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   Center(
                     child: Card(
-                      child: Text(
+                      child: const Text(
                         'Resultado: ${result.toStringAsFixed(precision)} °' +
                             convertedValue,
                         style: TextStyle(fontSize: 18),
