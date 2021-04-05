@@ -1,6 +1,8 @@
 # Temperature
 
-Primeiro trabalho
+![escudo](https://img.shields.io/badge/build-passing-brightgreen)
+
+Conversor de temperatura em flutter
 
 ## Funcionalidades do aplicativo
 
